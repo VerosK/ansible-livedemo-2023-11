@@ -1,0 +1,6 @@
+# see https://github.com/geerlingguy/ansible-role-php
+
+php_webserver_daemon: "httpd"
+
+php_extra_packages:
+  - php-pgsql
