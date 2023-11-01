@@ -1,0 +1,5 @@
+# requirements.yml
+
+roles:
+  - name: geerlingguy.postgresql
+    version: 3.5.0
