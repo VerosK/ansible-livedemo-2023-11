@@ -2,5 +2,5 @@
 
 php_webserver_daemon: "httpd"
 
-php_extra_packages:
+php_packages_extra:
   - php-pgsql
