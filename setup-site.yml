@@ -7,3 +7,4 @@
     - name: geerlingguy.postgresql
     - name: geerlingguy.apache
     - name: geerlingguy.php
+    - name: local.adminer

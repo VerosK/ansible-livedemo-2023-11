@@ -1,0 +1,14 @@
+
+- name: Ensure Adminer directory
+  file:
+    path: '{{ adminer_dir }}'
+    state: directory
+    owner: root
+
+- name: Download Adminer source
+  get_url:
+    url: '{{ adminer_source_url }}'
+    dest: '{{ adminer_dir }}/index.php'
+    checksum: '{{ adminer_checksum }}'
+    owner: root
+    mode: 0644

@@ -1,0 +1,9 @@
+# defaults/main.yml
+
+adminer_version: '4.8.1'
+adminer_dir: '/opt/adminer-{{ adminer_version }}'
+
+adminer_source_url:
+  'https://github.com/vrana/adminer/releases/download/v{{ adminer_version }}/adminer-{{ adminer_version }}.php'
+
+adminer_checksum: 'sha256:2fd7e6d8f987b243ab1839249551f62adce19704c47d3d0c8dd9e57ea5b9c6b3'
