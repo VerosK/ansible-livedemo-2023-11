@@ -5,6 +5,11 @@
 
   roles:
     - name: geerlingguy.postgresql
+      tags: postgresql
     - name: geerlingguy.apache
+      tags: apache
     - name: geerlingguy.php
+      tags: php
     - name: local.adminer
+      tags: adminer
+
