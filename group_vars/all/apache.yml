@@ -1,0 +1,14 @@
+
+apache_vhosts:
+  - servername: "{{ ansible_fqdn }}"
+    documentroot: "/var/www/html"
+
+    # map /adminer/ na /opt/adminer-.../index.php
+    extra_parameters: |
+      
+      Alias /adminer/ {{ adminer_dir }}/index.php
+      <Directory {{ adminer_dir }}>
+        DirectoryIndex index.php
+        AllowOverride All
+        Require all granted
+      </Directory>
